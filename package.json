@@ -1,0 +1,15 @@
+{
+  "name": "cypress-trello",
+  "version": "1.0.0",
+  "description": "Cypress Trello",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.2.0"
+  }
+}
