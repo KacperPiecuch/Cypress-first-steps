@@ -1,7 +1,7 @@
 {
-  "name": "cypress-trello",
+  "name": "cypress-todoist",
   "version": "1.0.0",
-  "description": "Cypress Trello",
+  "description": "Cypress Todoist",
   "private": "true",
   "main": "index.js",
   "scripts": {
