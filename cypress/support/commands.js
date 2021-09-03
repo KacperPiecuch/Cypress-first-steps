@@ -16,8 +16,7 @@ Cypress.Commands.add("logIn", (email, password) => {
 });
 
 Cypress.Commands.add("addTask", (title, description) => {
-  cy.logIn("kaacper1994@gmail.com", "Test1234")
-      .get(".controller.actions.task_actions.full_width_actions")
+  cy.get(".controller.actions.task_actions.full_width_actions")
       .click()
       .get(".public-DraftStyleDefault-block.public-DraftStyleDefault-ltr")
       .type(title)
