@@ -7,17 +7,13 @@ describe("edit-task", () => {
       )
       .get(".markdown_content.task_content")
       .click()
-      .get(".item_overview_content")
+      .get(".item_overview_header")
+      .type("{selectall}{backspace}Updated xD")
+      .wait(5000)
+      .get("reactist_button.reactist_button--primary")
       .click()
-      //.get(
-      //  ".richtextinput .public-DraftStyleDefault-block.public-DraftStyleDefault-ltr"
-      //)
-      //.type("Updated")
-      .get(".task_editor__description_field.no-focus-marker")
-      .type("Updated xD")
-      .get(
-        ".task_editor__form_actions.reactist_button.reactist_button--primary"
-      )
-      .click();
+      .get(".markdown_content.task_content")
+      .contains("Updated xD")
+      .should("be.visible");
   });
 });
